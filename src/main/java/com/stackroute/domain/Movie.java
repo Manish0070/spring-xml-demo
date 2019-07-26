@@ -6,11 +6,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Movie {
     private Actor actor; //actor object
 
-    public Actor getActor() {
-        return actor;
-    }
 
-    public void setActor(Actor actor) {
+    public Movie(Actor actor) {
         this.actor = actor;
     }
 

@@ -5,28 +5,9 @@ public class Actor {
     private String gender;
     private int age;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
+    public Actor(String name, String gender, int age) {
         this.name = name;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
         this.gender = gender;
-    }
-
-    public int getAge() {
-        return age;
-    }
-//        System.out.println(movie.getActor().getAge());
-//        System.out.println(movie.getActor().getGender());
-    public void setAge(int age) {
         this.age = age;
     }
 

@@ -3,11 +3,11 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="actor" class="com.stackroute.domain.Actor">
-        <property name="name" value="Manish"/>
-        <property name="gender" value="Male"/>
-        <property name="age" value="22"/>
+        <constructor-arg name="name" value="Manish"></constructor-arg>
+        <constructor-arg name="gender" value="Male"></constructor-arg>
+        <constructor-arg name="age" value="22"></constructor-arg>
     </bean>
     <bean id = "movie" class="com.stackroute.domain.Movie">
-        <property name="actor" ref="actor"></property>
+        <constructor-arg name="actor" ref="actor"></constructor-arg>
     </bean>
 </beans>
