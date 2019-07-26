@@ -7,7 +7,20 @@
         <constructor-arg name="gender" value="Male"></constructor-arg>
         <constructor-arg name="age" value="22"></constructor-arg>
     </bean>
-    <bean id = "movie" class="com.stackroute.domain.Movie">
+    <bean id="actor1" class="com.stackroute.domain.Actor">
+        <constructor-arg type="java.lang.String" value="Rakesh"></constructor-arg>
+        <constructor-arg type="java.lang.String" value="Male"></constructor-arg>
+        <constructor-arg type="int" value="22"></constructor-arg>
+    </bean>
+    <bean id="actor2" class="com.stackroute.domain.Actor">
+        <constructor-arg index="0" value="Vijay"></constructor-arg>
+        <constructor-arg index="1" value="Male"></constructor-arg>
+        <constructor-arg index="2" value="22"></constructor-arg>
+    </bean>
+    <bean id = "movieA" class="com.stackroute.domain.Movie">
+        <constructor-arg name="actor" ref="actor"></constructor-arg>
+    </bean>
+    <bean id = "movieB" class="com.stackroute.domain.Movie">
         <constructor-arg name="actor" ref="actor"></constructor-arg>
     </bean>
 </beans>

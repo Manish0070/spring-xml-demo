@@ -11,9 +11,19 @@ public class Main {
         Actor var =  context.getBean("actor",Actor.class);
         System.out.println(var.toString());
 
+        Actor var1 =  context.getBean("actor1",Actor.class);
+        System.out.println(var1.toString());
 
-        Movie movie = context.getBean("movie",Movie.class);
+        Actor var2 =  context.getBean("actor2",Actor.class);
+        System.out.println(var2.toString());
+
+
+        Movie movie = context.getBean("movieA",Movie.class);
         System.out.println(movie.toString());
+
+        Movie movie1 = context.getBean("movieB",Movie.class);
+        System.out.println(movie1.toString());
+        System.out.println(movie==movie1);
 
     }
 }
