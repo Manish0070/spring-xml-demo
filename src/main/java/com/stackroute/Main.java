@@ -23,7 +23,7 @@ public class Main {
 
         Movie movie1 = context.getBean("movieB",Movie.class);
         System.out.println(movie1.toString());
-        System.out.println(movie==movie1);
+
 
     }
 }
