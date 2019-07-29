@@ -19,7 +19,6 @@
     </bean>
 
     <bean name="movieA" class="com.stackroute.domain.Movie" autowire="byName">
-
     </bean>
 
    <bean name="movieB" class="com.stackroute.domain.Movie" >
