@@ -14,10 +14,7 @@ public  class Movie implements ApplicationContextAware,BeanNameAware,BeanFactory
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
         System.out.println(beanFactory);
-    }private ApplicationContextAware applicationContextAware;
-    private BeanFactoryAware beanFactoryAware;
-    private BeanNameAware beanNameAware;
-
+    }
 
 
     @Override

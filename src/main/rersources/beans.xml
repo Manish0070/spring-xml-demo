@@ -21,12 +21,16 @@
     <bean name="movieA" class="com.stackroute.domain.Movie" autowire="byName">
     </bean>
 
-   <bean name="movieB" class="com.stackroute.domain.Movie" >
-       <constructor-arg name="actor" ref="actor"></constructor-arg>
-       <constructor-arg name="actor1" ref="actor1"></constructor-arg>
-       <constructor-arg name="actor2" ref="actor2"></constructor-arg>
+    <bean name="movieB" class="com.stackroute.domain.Movie">
+        <constructor-arg name="actor" ref="actor"></constructor-arg>
+        <constructor-arg name="actor1" ref="actor1"></constructor-arg>
+        <constructor-arg name="actor2" ref="actor2"></constructor-arg>
     </bean>
-        <bean id="demobean" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy">
-        </bean>
+    <bean id="demobean" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="customInit"
+          destroy-method="customDestroy">
+    </bean>
+
+    <bean id="demobean1" class="com.stackroute.demo.BeanPostProcessorDemoBean">
+    </bean>
 
 </beans>
